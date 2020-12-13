@@ -10,11 +10,7 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
+
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -22,15 +18,21 @@
     />
     <link
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
       href="node_modules/bootstrap-social/bootstrap-social.css"
     />
+
     <title>NuCamp: A Better Way To Camp</title>
   </head>
 
   <body>
     <header class="jumbotron jumbotron-fluid">
       <div class="container">
-        <div class="row row-content align-items-center">
+        <div class="row">
           <div class="col">
             <h1>NuCamp</h1>
             <h2>a better way to camp</h2>
@@ -51,8 +53,8 @@
         </button>
         <div class="collapse navbar-collapse" id="nucampNavbar">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
                 ><i class="fa fa-home fa-lg"></i> Home</a
               >
             </li>
@@ -66,7 +68,7 @@
                 ><i class="fa fa-list fa-lg"></i> Sites</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="#"
                 ><i class="fa fa-address-card fa-lg"></i> Contact</a
               >
@@ -77,58 +79,61 @@
     </nav>
 
     <div class="container">
-      <div class="row row-content align-items-center">
-        <div class="col-sm-4 con-md-3 order-sm-last">
-          <h2 class="text-sm-right">Discover & Review</h2>
-        </div>
+      <div class="row">
         <div class="col">
-          <h3>Our Campsites</h3>
-          <p class="d-none d-sm-block">
-            Explore our growing database of curated campsites and leave your own
-            reviews!
-          </p>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Contact</li>
+          </ol>
+          <h2>Contact Us</h2>
+          <hr />
         </div>
       </div>
 
       <div class="row row-content align-items-center">
-        <div class="col-sm-4 con-md-3">
-          <h2>Featured Campsites</h2>
+        <div class="col-sm-4">
+          <h5>Our Address</h5>
+          <address>
+            1 Nucamp Way<br />
+            Seattle, WA 98001<br />
+            U.S.A.
+          </address>
         </div>
         <div class="col">
-          <h3>React Lake Campground</h3>
-          <p class="d-none d-sm-block">
-            Nestled in the foothills of the Chrome Mountains, this campground on
-            the shores of the pristine React Lake is a favorite for fly fishers.
-          </p>
+          <a role="button" class="btn btn-link" href="tel:+12065551234"
+            ><i class="fa fa-phone"></i> 1-206-555-1234</a
+          ><br />
+          <a
+            role="button"
+            class="btn btn-link"
+            href="mailto:campsites@nucamp.co"
+            ><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a
+          >
         </div>
       </div>
 
       <div class="row row-content">
-        <div class="col-sm-4 order-sm-last col-md-3">
-          <h2 class="text-sm-right">Our Community Partners</h2>
+        <div class="col-12">
+          <h2>Send us your Feedback</h2>
+          <hr />
         </div>
-        <div class="col">
-          <h3>Bootstrap Outfitters</h3>
-          <p class="d-none d-sm-block">
-            Bootstrap Outfitters supplies you with gear you need at prices you
-            can't beat.
-          </p>
-        </div>
+        <div class="col-md-10">Form goes here</div>
       </div>
     </div>
+
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-4 col-sm-2">
+          <div class="col-4 col-sm-2 offset-1">
             <h5>Links</h5>
             <ul class="list-unstyled">
-              <li><a href="#">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="aboutus.html">About</a></li>
               <li><a href="#">Sites</a></li>
-              <li><a href="contactus.html">Contact</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="col-6 offset-1 col-sm-5 text-center">
+          <div class="col-6 col-sm-5 text-center">
             <h5>Social</h5>
             <a
               class="btn btn-social-icon btn-instagram"
@@ -159,7 +164,6 @@
               href="mailto:campsites@nucamp.co"
               ><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a
             >
-            campsites@nucamp.co
           </div>
         </div>
       </div>
