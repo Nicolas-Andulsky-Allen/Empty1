@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <title>zdrill1</title>
+    <!--<link rel="stylesheet" href="css/ WHERE IS THE CODE .css">-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid black;
+      }
+      body {
+        font-family: "Sofia", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="jumbotron">
+      <h1>Daily drills to reinforce what I've learned.</h1>
+    </header>
+    <!-- list, form, image, jumbotron, table, font, card, -->
+    <!-- variable, data types, alert, prompt, ?confirm?, type conversions, math,
+    comparisons, if, logical operators, while loop, for loop, array, 
+    date and time, querySelector, node, mouse events, anchors-->
+
+    <ol type="A" start="2" id="listoffruits">
+      <li>Tomato</li>
+      <li>Potato</li>
+      <li>Tangerine</li>
+    </ol>
+
+    <dl style="margin-left: 10%">
+      <dt>What is this new type of list?</dt>
+      <dt>I guess we are going to find out.</dt>
+      <dd>A description list. Wonder when one would use such a thing?</dd>
+    </dl>
+    <textarea>Blabetyblabetyblabetybla.</textarea>
+    <form>
+      <label for="shmadio">Shmadio</label>
+      <input type="radio" id="shmadio" name="shmadio" />
+      <label for="bladio">Bladio</label>
+      <input type="radio" id="bladio" name="bladio" />
+    </form>
+
+    <img
+      src="img/react-lake.jpg"
+      alt="Water is wet."
+      style="margin: 10%; border-radius: 5%"
+    />
+
+    <!--<script src="js/ WHERE IS CODE .js"></script>-->
+  </body>
+  <footer></footer>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>
+
+<table style="border: 3px solid black; width: 10%">
+  <th style="border: 3px solid black">Bla</th>
+  <th>Bla</th>
+  <th>Bla</th>
+  <tr>
+    Blabbity
+  </tr>
+  <td>Blee</td>
+  <td>Bla</td>
+  <td>Bley</td>
+  <tr>
+    Bloobity
+  </tr>
+  <td>Blo</td>
+  <td>Bloo</td>
+  <td>Blooo</td>
+</table>
+<br />
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <br />
+    </div>
+    <div class="col-sm-6">
+      <div class="card border-dark mb-3" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">This is a Card.</h5>
+          <p class="card-text">Behold, the calling card of doom.</p>
+          <a href="#listoffruits" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <button onclick="myFunction()">Click Me</button>
+
+  <p id="demo"></p>
+
+  <script>
+    function myFunction() {
+      let txt;
+      let person = prompt("Please enter your name:", "Your Name Here.");
+      if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+      } else {
+        txt = "Hello " + person + "! How are you today?";
+        alert("Hello " + person + "! How are you today?");
+      }
+      document.getElementById("demo").innerHTML = txt;
+    }
+  </script>
+</div>
+<div>
+  <button onclick="mathFunction()">Click Me</button>
+
+  <p id="yourGuess"></p>
+  <p id="yourGuessAndFive"></p>
+
+  <script>
+    function mathFunction() {
+      let txt;
+      let txtAndFive;
+      let guessNumber = prompt(
+        "Pick a number between 1 and 10",
+        "Type Your Number Here."
+      );
+      let guessNumbNumb = Number(guessNumber);
+      if (guessNumber == null || guessNumber == "") {
+        txt = "User cancelled the prompt.";
+      } else {
+        txt =
+          "How could I possibly have known that " +
+          guessNumber +
+          " was your number?  What an amazing trick!  Also, 5 plus your number is " +
+          (guessNumbNumb + 5) +
+          " .";
+
+        alert("Is " + guessNumber + " Your Number?");
+        confirm("I am amazing");
+      }
+      document.getElementById("yourGuess").innerHTML = txt;
+    }
+  </script>
+</div>
